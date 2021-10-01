@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body></body>
+  
+<nav id="navbar">
+  <header><h1>HTML Table Documentation</h1></header>
+  <ul>
+  <li id="first_list" class="nav-lists"><a href="#Introduction" class="nav-link">Introduction</a></li>
+  <li class="nav-lists"><a href="#What_You_Should_Already_Know" class="nav-link">What You Should Already Know</a></li>
+  <li class="nav-lists"><a href="#HTML_Table_Tags" class="nav-link">HTML Table Tags</a></li>
+  <li class="nav-lists"><a href="#HTML_Table_Scope_Attribute" class="nav-link">HTML Table Scope Attribute</a></li>
+  <li class="nav-lists"><a href="#HTML_Table_Styling" class="nav-link">HTML Table Styling</a></li>
+  <li class="nav-lists" style="padding-top: 9px; margin-bottom: 7px;"><a href="#Reference" class="nav-link">Reference</a></li>
+ 
+  
+</ul>
+</nav>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header style="font-size: 30px;">Introduction</header>
+    <code>
+    <p>A table can be used several ways on a page but one thing all tables have in common is that they are all used to present information in an organized way.</p><br>
+    <p>If you are looking to create a table on a web page, there are several things that you need to know.</p><br>
+      <p>One of the most important things you need to know before you can create a table using HTML are your table tags.</p>
+      <p>We are going to cover this later on as it is the most important thing you need to know when creating a table but before that, there are several things you need to be aware of before creating a table</p><br>
+      <ul>
+        <li>You should know the element tags of a table</li>
+        <li>You should have a good idea of how you plan to arrange the table</li>
+      </ul>
+    </code>
+   </section>
+  <section class="main-section"  id="What_You_Should_Already_Know">
+    <header style="font-size: 30px;">What You Should Already Know</header>
+    <code>
+    <p>Building a table can be fun if you know what you are doing.</p><br>
+    <p>But before you jump in to start building a table there are several things that you should already know.</p><br>
+      <ul>
+        <li>You should know how to use HTML to create content on a page</li>
+        <li>You should know how to use CSS as this would make it easy when customizing your table</li>
+      </ul>
+    </code>
+  </section>
+  <section class="main-section"  id="HTML_Table_Tags">
+    <header style="font-size: 30px;">HTML Table Tags</header>
+    <code>
+    <p>There are several tags that you need to know to create a table.</p><br>
+    <p>I would list and explain some of these tags below and later leave a reference where you can get more information on creating a table.</p>
+      <ul>
+        <li>&lt;table&gt;&lt;/table&gt;</li><br><p>This is considered the first tag to use when creating a table. Nothing happens here until you place other tags within it. 
+        All this tag does is that it creates a table where you are to place your content</p>
+        <li>&lt;tr&gt;&lt;/tr&gt;</li><br>
+        <p>This adds tags for rows. Depending on how many you want would determine how many of its opening and closing tags you would include.<br><br>
+        Just using this tag would make any data display on the table. You must define each cell element and you would add data using the <strong>table data element &lt;td&gt</strong></p>
+        <li>&lt;td&gt;&lt;/td&gt;</li>
+        <p>As we already mentioned, this allows us to input data with the tags which would then appear on the form of cells. Below is a representation of a simple table with styling.</p><br>
+        <table id="first_table" style="text-decoration: none">
+  <tr>
+    <td>Adam’s Greenworks</td>
+    <td>14</td>
+    <td>Package Items</td>
+  </tr>
+  <tr>
+    <td>73</td>
+    <td>14</td>
+    <td>81</td>
+  </tr>
+</table>
+        <li>&lt;th&gt;&lt;/th&gt;</li>
+        <p>We add headings to the contents of a table by making use of this tag. It must be placed within the &lt;tr&gt;&lt;/tr&gt; tag</p>
+      </ul>
+    </code>
+  </section>
+  <section class="main-section"  id="HTML_Table_Scope_Attribute">
+    <header style="font-size: 30px;">HTML Table Scope Attribute</header>
+    <code>
+    <p>Two scope attributes that you can use in your table are:</p>
+      <ul>
+        <li>row: by using this value, it makes it clear that the heading is for a row</li>
+        <li>col: this value makes it clear that the heading is for a column</li><br>
+        <p>There are other attributes that we use when creating a table</p>
+        <li>colspan: we use this attribute to create a column to span more than one cell. Using this attribute creates data that spans multiple columns and it accepts an integer as a value to denote the number of columns it would occupy</li>
+        <li>rowspan: This works in a similar way to colspan but instead of spanning through columns it spans through row.</li>
+      </ul>
+    </code>
+   </section>
+  <section class="main-section"  id="HTML_Table_Styling">
+    <header style="font-size: 30px;">HTML Table Styling</header>
+    <code>
+    <p>Plain HTML without the use of CSS would make any content look plain and the same can be said about a table. To style a table you need to have some knowledge on how to use CSS.</p><br>
+    <p>Without that, your table would come out in a way you probably do no like. .</p>
+      <p>At the end of the post you would see a table with styling so you understand just what I mean.</p>
+      
+    </code>
+   </section>
+   <section class="main-section"  id="Reference">
+    <header style="font-size: 30px;">Reference</header>
+    <code>
+     
+      <ul>
+        <li>Reference: Developer mozillar, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table">The table element</a></li>
+      </ul>
+    </code>
+   </section>
+  
+
+   <h2 style="text-align: center">Semantic Tags</h2>
+      <p style="text-align: center">Semantic elements clearly describes its meaning to both the browser and the developer. They provide information about the content between the opening and closing tags. </p><br>
+    <table>      
+        <thead>
+          <tr>
+            <th scope="col">TAGS</th>
+            <th scope="col">NAME</th>
+            <th scope="col">DESCRIPTION</th>
+          </tr>
+        </thead>          
+      <tbody>
+        <tr>
+          <td class="firstcolor">&lt;header&gt;</td>
+          <td>Header tag</td>
+          <td>This is usually for navigational links or introductory content containing h1 to h6 headings</td>
+        </tr>
+        <tr>
+          <td class="othercolor sectags">&lt;main&gt;</td>
+          <td class="othercolor">Main tag</td>
+          <td class="othercolor">It is used to encapsulate the dominant content within a webpage. This element wraps the main content of the page, and there should be only one per page. </td>
+        </tr>
+        <tr>
+          <td class="firstcolor">&lt;article&gt;</td>
+          <td>Article tag</td>
+          <td>It used to to wrap independent, self-contained content. This tag works well with blog entries, forum posts, or news articles. </td>
+        </tr>
+        <tr>
+          <td class="othercolor sectags">&lt;section&gt;</td>
+          <td class="othercolor">Section tag</td>
+          <td class="othercolor">Groups related content. It is used for grouping thematically related content. </td>
+        </tr>
+        <tr>
+          <td class="firstcolor">&lt;nav&gt;</td>
+          <td>Navigation tag</td>
+          <td>This is used to define a block of navigation links such as menus and tables of contents. It can be used inside the header element and also on its own.</td>
+        </tr>
+        <tr>
+          <td class="othercolor sectags">&lt;footer&gt;</td>
+          <td class="othercolor">Footer tag</td>
+          <td class="othercolor">Mostly located at the bottom of the page outside the &lt;main&gt; tag and is used to hold info such as contact information, copyright information, Terms of use, Site Map, Reference to top page links, etc.</td>
+        </tr>
+        <tr>
+          <td class="firstcolor">&lt;aside&gt;</td>
+          <td>Aside tag</td>
+          <td>This is used to mark additional information that can enhance another element but isn't required in order to understand the main content.</td>
+        </tr>
+        <tr>
+          <td class="othercolor sectags">&lt;Figure&gt;</td>
+          <td class="othercolor">Figure tag</td>
+          <td class="othercolor">It is an illustration used to encapsulate media such as image, illustration, diagram, code snippet, etc. </td>
+        </tr>
+        <tr>
+          <td class="firstcolor">&lt;Figcaption&gt;</td>
+          <td>Figcaption tag</td>
+          <td>This is used to add a caption to the image as it is an element used to describe the media in the &lt;figure tag&gt;.</td>
+        </tr>
+      </tbody>
+    </table><br>
+    <h2 style="text-align: center">Non-Semantic Tags </h2>
+    <p style="text-align: center">These tags tell us nothing about their contents.</p><br>
+    <table>
+      <thead>
+        <tr>
+        <th>TAGS</th>
+        <th>NAME</th>
+        <th>DESCRIPTION</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>&lt;div&gt;</td>
+        <td>Division tag</td>
+        <td>This defines a division or a section in an HTML document. It is used as a container for HTML elements</td>
+      </tr>
+      <tr>
+        <td class="othercolor sectags">&lt;span&gt;</td>
+        <td class="othercolor">Span tag</td>
+        <td class="othercolor">This is an inline container used to mark up a part of a text, or a part of a document</td>
+      </tr>
+      </tbody>
+    </table>
+</main>
+</body>
+</html>
